@@ -8,3 +8,12 @@ h1 {
   text-align: center;
   font-family: 'Formula1-Bold';
 }
+
+.container {
+  border: 1px solid red;
+  height: 75vh;
+
+    p {
+      text-align: end;
+    }
+}
