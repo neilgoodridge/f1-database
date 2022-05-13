@@ -39,3 +39,5 @@
 yarn-debug.log*
 .yarn-integrity
 public/assets
+
+CLOUDINARY_URL=cloudinary://725531134937295:SlMUbwIdjc14PFUKY0OlC4lq1jE@k2x4b-523p
