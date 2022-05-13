@@ -1,0 +1,24 @@
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <%= link_to root_path, class: "navbar-brand" do %>
+      <img src="https://res.cloudinary.com/k2x4b-523p/image/upload/c_scale,h_45/v1652448163/F1_zwisgj.png" alt="F1">
+      <% end %>
+    </div>
+  </div>
+
+  <div class="nav-btn">
+    <label for="nav-check">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+  </div>
+
+  <div class="nav-links">
+    <%= link_to "Drivers", class: "nav-link" %>
+    <%= link_to "Teams", class: "nav-link" %>
+    <%= link_to "Tracks", class: "nav-link" %>
+    <%= link_to "Seasons", class: "nav-link" %>
+    <%= link_to "More", class: "nav-link" %>
+  </div>
+</div>
