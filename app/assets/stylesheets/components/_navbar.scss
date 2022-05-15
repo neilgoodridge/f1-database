@@ -1,14 +1,15 @@
 
 
 .nav {
-  min-height: 4vh;
+  // min-height: 4vh;
   width: 100%;
-  background-color: transparent;
-  position: relative;
+  // background-color: transparent;
+  // position: relative;
   justify-content: space-between;
   // background-color: rgba(0, 0, 0, 0.1);
-  font-family: 'Quicksand', sans-serif;
+  // font-family: 'Quicksand', sans-serif;
   // margin-bottom: 5vh;
+  position: fixed;
 }
 
 .nav>.nav-header {
@@ -28,13 +29,15 @@
 
 .nav>.nav-links {
   font-family : 'Formula1-Bold';
-  display: inline;
-  float: right;
+  display: flex;
+  flex: space-between;
+  align-items: flex-end;
   font-size: 16px;
-  color: white;
-  opacity: 1;
+  // color: white;
+  // opacity: 1;
   height: 4vh;
-  width: 30%;
+  // width: auto;
+  // min-width: 50%;
 }
 
 .nav>.nav-links>a {
