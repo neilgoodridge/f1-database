@@ -4,14 +4,19 @@
   src: url('Formula1-Bold.ttf');
 }
 
+section.content-section {
+  background-origin: bottom;
+  min-height: 100vh;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 18% 0 42%;
-  // margin: auto;
+  min-height: 100vh;
 }
 
 h1 {
+  padding: 18% 0 42%;
   text-align: center;
   font-family: 'Formula1-Bold';
   color: white;
