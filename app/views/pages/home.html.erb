@@ -5,47 +5,31 @@
 </div>
 
 <section class="content-section bg-light banner" style="background-image: url(https://www.total-motorsport.com/wp-content/uploads/2021/02/F1-2022-driver-line-up.jpeg);" id="drivers">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <a class="js-scroll-trigger" href="#Drivers"></a>
-      </div>
-    </div>
-  </div>
+  <a class="js-scroll-trigger" href="#Drivers"></a>
 </section>
 <section class="content-section bg-light banner" style="background-image: url(https://i.imgur.com/HFdpBTR.png);" id="teams">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <a class="js-scroll-trigger" href="#Teams"></a>
-      </div>
-    </div>
-  </div>
+  <a class="js-scroll-trigger" href="#Teams"></a>
 </section>
-<section class="content-section bg-light banner" style="background-image: url(https://preview.redd.it/x0f0uoeehxv11.jpg?auto=webp&s=27fc2684f3f434b14d150bb03cb71f9d542a9137);" id="tracks">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <a class="js-scroll-trigger" href="#tracks"></a>
-      </div>
-    </div>
-  </div>
+<section class="content-section bg-light banner banner-fill" style="background-image: url(https://preview.redd.it/x0f0uoeehxv11.jpg?auto=webp&s=27fc2684f3f434b14d150bb03cb71f9d542a9137);" id="tracks">
+  <a class="js-scroll-trigger" href="#Tracks"></a>
 </section>
 <section class="content-section bg-light banner" style="background-image: url(https://scuderia.alphatauri.com/wp-content/uploads/2021/10/2022-F1-Calendar.jpg);" id="seasons">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <a class="js-scroll-trigger" href="#Seasons"></a>
-      </div>
-    </div>
-  </div>
+  <a class="js-scroll-trigger" href="#Seasons"></a>
 </section>
 <section class="content-section bg-light banner" id="more">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <a class="js-scroll-trigger" href="#more"></a>
-      </div>
-    </div>
-  </div>
+  <a class="js-scroll-trigger" href="#More"></a>
 </section>
+
+
+<%# scroll button %>
+
+<script>
+  function scrollTop(){
+    let scrollTop = document.getElementById('scroll-top')
+    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+    if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+  }
+  window.addEventListener('scroll', scrollTop)
+</script>
+
+<a href="#" class="scrollup" id="scroll-top"><i class="fas fa-arrow-circle-up"></i></a>
