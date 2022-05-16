@@ -15,5 +15,4 @@ class PagesController < ApplicationController
       return render action: :index
     end
   end
-
 end
