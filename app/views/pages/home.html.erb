@@ -1,11 +1,21 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url(https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/2021BritishManualAdds/2022CarImages/2022CarImageSTUDIO/2022-F1-Car-Silverstone-Grid.jpg.transform/12col-retina/image.jpg);">
   <div class="container">
     <h1>It's lights out and away we go! 🏎 </h1>
+    <div class="wrap">
+      <div class="search">
+          <input type="text" class="searchTerm" placeholder="e.g. Lewis Hamilton or Spa Francochamps">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
-
 <section class="content-section bg-light banner" style="background-image: url(https://www.total-motorsport.com/wp-content/uploads/2021/02/F1-2022-driver-line-up.jpeg);" id="drivers">
   <a class="js-scroll-trigger" href="#Drivers"></a>
+  <% Driver.all.each do |driver| %>
+    <h3><a href="<% driver.all.first_name %>"></a></h3>
+  <%end%>
 </section>
 <section class="content-section bg-light banner" style="background-image: url(https://i.imgur.com/HFdpBTR.png);" id="teams">
   <a class="js-scroll-trigger" href="#Teams"></a>
