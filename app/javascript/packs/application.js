@@ -15,4 +15,3 @@ ActiveStorage.start()
 
 
 import "bootstrap";
-import { loadDynamicBannerText } from '../components/banner';
