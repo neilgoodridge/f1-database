@@ -11,3 +11,8 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+
+
+import "bootstrap";
+import { loadDynamicBannerText } from '../components/banner';

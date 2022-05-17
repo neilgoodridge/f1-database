@@ -1,11 +1,12 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url(https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/2021BritishManualAdds/2022CarImages/2022CarImageSTUDIO/2022-F1-Car-Silverstone-Grid.jpg.transform/12col-retina/image.jpg);">
   <div class="container">
-    <h1>It's lights out and away we go! 🏎 </h1>
-    <div class="wrap">
+    <p id="lightsOut1">It's lights out<br></p>
+    <p id="lightsOut2"> and away we go!</p>
+    <div class="wrap" id="searchBar">
       <div class="search">
-          <input type="text" class="searchTerm" placeholder="e.g. Lewis Hamilton or Spa Francochamps">
-          <button type="submit" class="searchButton">
-            <i class="fa fa-search"></i>
+        <input type="text" class="searchTerm" placeholder="e.g. Lewis Hamilton or Spa Francochamps">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
         </button>
       </div>
     </div>
@@ -27,16 +28,53 @@
   <a class="js-scroll-trigger" href="#More"></a>
 </section>
 
-
 <%# scroll button %>
 
 <script>
   function scrollTop(){
     let scrollTop = document.getElementById('scroll-top')
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
     if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
   }
   window.addEventListener('scroll', scrollTop)
 </script>
-
 <a href="#" class="scrollup" id="scroll-top"><i class="fas fa-arrow-circle-up"></i></a>
+
+<%# hide elements %>
+
+<script>
+  document.getElementById("lightsOut1").style.visibility = "hidden";
+</script>
+
+<script>
+  document.getElementById("lightsOut2").style.visibility = "hidden";
+</script>
+
+<script>
+  document.getElementById("searchBar").style.visibility = "hidden";
+</script>
+
+<%# Timeout functions %>
+
+<script>
+  const myTimeout1 = setTimeout(lightsOut1, 1000);
+
+  function lightsOut1() {
+    document.getElementById("lightsOut1").style.visibility = " visible";
+}
+</script>
+
+<script>
+  const myTimeout2 = setTimeout(lightsOut2, 2000);
+
+  function lightsOut2() {
+    document.getElementById("lightsOut2").style.visibility = " visible";
+}
+</script>
+
+<script>
+  const myTimeout3 = setTimeout(searchBar, 3000);
+
+  function searchBar() {
+    document.getElementById("searchBar").style.visibility = "visible";
+}
+</script>

@@ -25,6 +25,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'cloudinary', '~> 1.16.0'
 
+gem "typedjs-rails", "~> 2.0.9"
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'twitter'

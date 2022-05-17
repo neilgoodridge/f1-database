@@ -254,6 +254,8 @@ GEM
       multipart-post (~> 2.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
+    typedjs-rails (2.0.9)
+      railties (>= 3.1)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
@@ -306,6 +308,7 @@ DEPENDENCIES
   spring
   turbolinks (~> 5)
   twitter
+  typedjs-rails (~> 2.0.9)
   tzinfo-data
   web-console (>= 4.1.0)
   webdrivers
