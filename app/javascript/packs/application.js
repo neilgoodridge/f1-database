@@ -14,4 +14,4 @@ ActiveStorage.start()
 
 
 
-import "bootstrap";
+require("bootstrap");
